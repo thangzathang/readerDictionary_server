@@ -44,7 +44,7 @@ const PORT = process.env.PORT || 5002;
 
 // To show something to the user
 app.get("/", (req, res) => {
-  res.send("This is the Jaime application!");
+  res.send("This is the Pictionary API application!");
 });
 
 app.get("/getImage/:term", (req, res) => {
