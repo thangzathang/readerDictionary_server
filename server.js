@@ -30,7 +30,7 @@ const cors = require("cors");
 
 // Serapapi
 const SerpApi = require("google-search-results-nodejs");
-const search = new SerpApi.GoogleSearch("3ca32d5113d72e720f2d6c26f52edc16491f5767466e2196d413cb43de3b7538");
+const search = new SerpApi.GoogleSearch(process.env.SERPAPI_ACCESS_KEY);
 
 // Init App
 const app = express();
